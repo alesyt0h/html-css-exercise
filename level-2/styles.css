@@ -1,0 +1,213 @@
+html, body {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background: #fff;
+}
+
+header {
+    background: url('./assets/header-bg.jpg') center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: orange;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1210px) {
+    body {
+        margin: auto 10px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #main {
+        flex-direction: column;
+    }
+    .mainw {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #headerTop {
+        margin-top: 15px;
+        flex-direction: column;
+        flex: auto;
+        justify-content: flex-start !important;
+    }
+    #headerTop > p {
+        margin: 8px 4px !important;
+    }
+    #socialMedia {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 5%;
+        margin: 0px !important;
+    }
+    .flexcol {
+        flex-direction: column;
+    }
+    .lightyellow {
+        margin: 9px 0px !important;
+    }
+    .anchorLogo {
+        position: absolute;
+        left: 0;
+    }
+}
+
+#container {
+    max-width: 1160px;
+    margin: auto;
+}
+
+#headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 0px 7px;
+}
+
+#headerTop > p {
+    flex: 1;
+    margin-right: 6px;
+    margin-left: 6px;
+    background: #EA5455;
+}
+
+#headerTop > a, #socialMedia > a {
+    text-decoration: none;
+    color: grey
+}
+
+#headerTop > a:hover, #socialMedia > a:hover {
+    color: #F08080
+}
+
+#headerBottom {
+    padding: 0px 10px;
+    width: 80%;
+    align-self: center;
+}
+
+#socialMedia {
+    margin-right: 50px;
+}
+
+.h-flex2 {
+    flex: 2 !important;
+}
+
+#main {
+    display: flex;
+    margin-top: 40px;
+}
+
+.mainw {
+    flex: 2 !important;
+    background: #4E4E6A;
+}
+
+.flexed {
+    flex: 1;
+    padding: 10px;
+}
+
+.flexed > div {
+    margin-bottom: 10px;
+}
+
+.flexcol {
+    display: flex;
+}
+
+.flexcol > p {
+    background: #1F6CB0;
+    display: inline-block;
+    flex: 1;
+    margin: 5px;
+    padding: 3px;
+}
+
+/* 
+    colors and backgrounds
+*/
+
+.opacity50 {
+    background: rgba(0, 0, 0, 0.466);
+}
+
+.magenta {
+    background:#A9333A
+}
+
+.lightcyan {
+    margin: 5px;
+    padding: 3px;
+    background: #70A3C4;
+}
+
+.coral {
+    background: #FF9292
+}
+
+.yellow {
+    background: #FFE699;
+    padding: 3px;
+}
+
+.headerText {
+    font-size: 1.5em;
+    color: #ff9292be;
+}
+
+/* 
+    spacing, align and borders 
+*/
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-3 {
+    padding: 3px;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.bB {
+    border-radius: 4px;
+    border-color: grey;
+}
+
+.bB7 {
+    border-radius: 7px;
+}
+
+.center {
+    text-align: center;
+}
+
+.inline {
+    display: inline;
+}
+
+.logo {
+    margin-left: 15px;
+    transition: width 2s, height 2s;
+}
+
+.logo:hover {
+    filter: saturate(2);
+    filter: contrast(160%);
+    -webkit-filter: saturate(2);
+    -webkit-filter: contrast(160%);
+}
